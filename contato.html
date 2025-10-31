@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contato - Lucas Bernardo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="sobre.html">Lucas Bernardo</a>
+      <nav class="main-nav">
+        <a href="index.html">Sobre</a>
+        <a href="formacao.html">Formação</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="contato.html" class="active">Contato</a>
+      </nav>
+      <div class="controls">
+        <button id="themeToggleContato" aria-label="Alternar tema">🌓</button>
+        <button id="menuToggleContato" class="menu-toggle" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card contact-card">
+      <h1>Contato</h1>
+      <p>Use o formulário abaixo para enviar uma mensagem.</p>
+
+      <form id="contactForm" novalidate>
+        <label for="name">Nome</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Enviar</button>
+          <button type="reset" class="btn btn-ghost">Limpar</button>
+        </div>
+
+        <div id="formFeedback" role="status" aria-live="polite" class="feedback" hidden></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year4"></span> Lucas Bernardo — Portfólio</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

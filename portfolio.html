@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfólio - Lucas Bernardo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="sobre.html">Lucas Bernardo</a>
+      <nav class="main-nav">
+        <a href="index.html">Sobre</a>
+        <a href="formacao.html">Formação</a>
+        <a href="portfolio.html" class="active">Portfólio</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="controls">
+        <button id="themeTogglePortfolio" aria-label="Alternar tema">🌓</button>
+        <button id="menuTogglePortfolio" class="menu-toggle" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card works">
+      <h1>Projetos</h1>
+      <div class="projects-grid">
+
+        <article class="project">
+          <h3>Sistema Bancário</h3>
+          <p>Um sistema bancário com cadastro de cliente, depósito, saque, juros, empréstimo e tela de extrato.</p>
+          <p><a href="https://github.com/lucassuppi/Sistema_bancario" class="btn" target="_blank">Ver repositório</a></p>
+        </article>
+
+        <article class="project">
+          <h3>Cinema!</h3>
+          <p>Projeto de sistema de cinema com carregamento de dados por arquivo CSV, consulta e reserva de assentos, liberação e mapa visual.</p>
+          <p><a href="https://github.com/lucassuppi/Cinema" class="btn" target="_blank">Ver repositório</a></p>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year3"></span> Lucas Bernardo — Portfólio</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
